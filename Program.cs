@@ -21,6 +21,7 @@ namespace DotNetExampleApi
             var connectionStringConfig = builder.Build();
 
             var host = new WebHostBuilder()
+                .UseUrls("http://127.0.0.1:5000", "http://0.0.0.0:5000")
                 .UseConfiguration(config)
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())

@@ -36,6 +36,10 @@ flyway.baselineOnMigrate=true
 $ cd Migrations/Commands/
 $ sh migrate.sh
 ```
+
+## **Application Configuration**
+
+In the file `appsettings.json` set your own database connection configuration under the tag `DatabaseConfiguration`
  
 # **Execution**
 
